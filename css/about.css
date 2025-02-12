@@ -1,0 +1,146 @@
+
+.header_area {
+    background-color: darkslateblue; 
+    color: white;
+    padding: 10px 0;
+    font-size: 16px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.col-md-6 {
+    flex: 1;
+    text-align: center; 
+}
+
+.top_quote p {
+    margin: 0;
+    font-weight: bold;
+}
+
+.top_quote i {
+    margin-right: 8px;
+    color: white; 
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .col-md-6 {
+        margin-bottom: 10px;
+    }
+}
+
+
+.relative{
+   background-color: #004b72;
+}
+
+/* about page css code*/
+ .section-inner {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+}
+
+.card-container {
+    top: 20px;
+    height: auto;
+    display: flex;
+    width: 80%;
+    margin-top: 50px;
+    background: white;
+    border-radius: 3px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+.text-content {
+    margin-left: 20px;
+    width: 65%;
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.text-content1 {
+    margin-left: 20px;
+    width: 80%;
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.text-content p {
+    text-align: justify;
+    margin-top: 20px; 
+    color: rgb(112, 109, 109);
+    margin-bottom: 18px;
+}
+
+.text-content h1{
+    text-align: justify;
+    margin-left: 20px;
+    margin-top: 20px;
+    /* font-weight: bold;  */
+    font-size: 2rem;
+    font-family: Arial Black, sans-serif;
+    
+}
+
+.text-p{
+    justify-content: space-evenly;
+
+}
+
+.image-content {
+    width: 40%;
+    float: right;
+    margin-left: 20px;
+    margin-top: 20px; 
+    margin-right: 20px;
+}
+img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about_us_text img {
+        width: 100%;
+        float: none;
+        margin: 0 auto 15px;
+        display: block;
+    }
+} 
+
+
+.container-1 {
+    display: flex;
+  margin-top: 5px;
+    margin: 0 auto;
+    height: 50px;
+    padding: 15px;
+    background-color: black;
+}
+
+.col-md-6 {
+    flex: 1;
+    text-align: center; 
+}
