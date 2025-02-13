@@ -1,29 +1,29 @@
-<?php 
+
+
+
+<?php
 
 include 'connect.php';
 
-$message = "";
-$toastClass = "";
+if(isset($_POST['doctors'])){
+    $full_name = $_POST['full_name'];
+    $email = $_POST['email'];
+    $phone = $_POST['phone'];
+    $message = $_POST['message'];
 
-if (isset($_POST['doctors'])) {
-    $full_name =$_POST['full_name'];
-    $email =$_POST['email'];
-    $phone =$_POST['phone'];
-    $message =$_POST['message'];
-
-    $insert_query=mysqli_query($conn, "insert into `doctor` (full_name,email,phone,message) 
-        values('$full_name','$email','$phone','$message')")
-        or die("Insert query failed");
-        if($insert_query){
-            $user_message = "Account created successfully";
-            $toastClass = "#28a745"; // Success color
-        } else {
-            $user_message = "Error inserting record";
-            $toastClass = "#dc3545";
-        }
+    // Prevent duplicate emails
+    $check = mysqli_query($conn, "SELECT * FROM doc WHERE email='$email'");
+    if(mysqli_num_rows($check) > 0){
+        $display_message= "Email already exists!";
+    } else {
+        $query = "INSERT INTO doc (full_name, email, phone, message) VALUES ('$full_name', '$email', '$phone', '$message')";
+        mysqli_query($conn, $query);
+        $display_message= "Data saved successfully!";
     }
-?>
+}
 
+
+?>
 
 
 <!DOCTYPE html>
@@ -50,6 +50,8 @@ if (isset($_POST['doctors'])) {
 
 </head>
 <body>
+
+
 
  <div class="header_area">
     <div class="container">
@@ -98,28 +100,52 @@ if (isset($_POST['doctors'])) {
     </div>
 </div>
 
-
-<section class="section-inner">
-    <div class="row">
-        <form action="" class="doctors" method="post">
-
-            <div class="col-12">
-              <input type="text" name="full_name" class="form-control" placeholder="Enter the Full Name" required>
-              <input type="email" name="email" class="form-control" placeholder="Enter the E-Mail" required>
-              <input type="phone" name="phone" class="form-control" placeholder="Enter the Phone Number" required>
-            </div>
-
-            <div class="col-12">
-               <textarea name="message" placeholder="Enter About yourself" rows="6" class="form-control"></textarea>
-            </div>
+<?php
+        if(isset($display_message)){
             
-            <div class="button-container">
-                <button class="btn btn-primary" type="submit">Submit</button>
-            </div>
+            echo
+            "<div class='display_message'>
+               <span>$display_message</span>
+                 <i class='fas fa-times' onclick='this.parentElement.style.display=`none`'></i>
+            </div>";
+        }
+    
+    ?>
+    
+<section class="section-inner">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <form action="" class="doctors" method="post">
+                    
+                    <div class="form-group">
+                        <input type="text" name="full_name" class="form-control" placeholder="Enter Full Name" required>
+                    </div>
 
-        </form>
+                    <div class="form-group">
+                        <input type="email" name="email" class="form-control" placeholder="Enter E-Mail" required>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="tel" name="phone" class="form-control" placeholder="Enter Phone Number" required>
+                    </div>
+
+                    <div class="form-group">
+                        <textarea name="message" class="form-control" placeholder="Enter About Yourself" rows="6"></textarea>
+                    </div>
+
+                    <div class="text-center">
+                        <button class="btn btn-primary" type="submit" name="doctors">Submit</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
     </div>
 </section>
+
+
+
 
 <!-- Floating Contact Button 1 -->
 <div class="fixed right-1 top-1/3 transform -translate-y-1/1 flex items-center mt-10">

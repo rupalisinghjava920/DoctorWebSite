@@ -580,6 +580,7 @@ p {
 .footer_area .link li {
     margin: 10px 0;
     margin-left: 120px;
+    /* list-style-type: disc;  */
 }
 
 .footer_area .link li a {
@@ -640,6 +641,7 @@ p {
     .footer_area .link li {
         margin-left: 0;
         text-align: center;
+        
     }
 
     .footer_single_contact {
