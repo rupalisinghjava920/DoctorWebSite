@@ -1,3 +1,31 @@
+<?php 
+
+include 'connect.php';
+
+$message = "";
+$toastClass = "";
+
+if (isset($_POST['doctors'])) {
+    $full_name =$_POST['full_name'];
+    $email =$_POST['email'];
+    $phone =$_POST['phone'];
+    $message =$_POST['message'];
+
+    $insert_query=mysqli_query($conn, "insert into `doctor` (full_name,email,phone,message) 
+        values('$full_name','$email','$phone','$message')")
+        or die("Insert query failed");
+        if($insert_query){
+            $user_message = "Account created successfully";
+            $toastClass = "#28a745"; // Success color
+        } else {
+            $user_message = "Error inserting record";
+            $toastClass = "#dc3545";
+        }
+    }
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -70,53 +98,15 @@
     </div>
 </div>
 
-<!-- <section class="section-inner">
-    <div class="container-2">
-        <form>
-            <div class="row h">
-                <input type="text" name="fullName" placeholder="Full Name" required>
-                <input type="email" name="email" placeholder="E-Mail" required>
-                <input type="tel" name="phone" placeholder="Phone" required>
-            </div>
-            <textarea name="message" rows="5" placeholder="Message" required></textarea>
-            <button type="submit">Submit</button>
-        </form>
-    </div>
-</section> -->
-
-<!-- <section class="section-inner">
-    <div class="row">
-        <div class="col-4">
-            <input type="text" class="form-control" placeholder="First Name" aria-label="Full Name">
-        </div>
-        <div class="col-4">
-            <input type="email" class="form-control" placeholder="E-Mail" aria-label="E-Mail">
-        </div>
-        <div class="col-4">
-            <input type="text" class="form-control" placeholder="Phone" aria-label="Phone">
-        </div>
-    </div>
-
-    <div class="col-12">
-        <input type="textarea" class="form-control" placeholder="Message" aria-label="message">
-    </div>
-
-</section> -->
 
 <section class="section-inner">
     <div class="row">
-        <!-- <form action="" method="post"> -->
+        <form action="" class="doctors" method="post">
 
-            <div class="col-4">
-              <input type="text" id="full name" class="form-control" placeholder="Enter the Full Name" require>
-            </div>
-
-            <div class="col-4">
-                <input type="email" id="e-mail" class="form-control" placeholder="Enter the E-Mail" aria-label="e-mail" require>
-            </div>
-
-            <div class="col-4">
-                <input type="text" id="phone" class="form-control" placeholder="Enter the Phone Number" aria-label="phone" require>
+            <div class="col-12">
+              <input type="text" name="full_name" class="form-control" placeholder="Enter the Full Name" required>
+              <input type="email" name="email" class="form-control" placeholder="Enter the E-Mail" required>
+              <input type="phone" name="phone" class="form-control" placeholder="Enter the Phone Number" required>
             </div>
 
             <div class="col-12">
@@ -126,12 +116,10 @@
             <div class="button-container">
                 <button class="btn btn-primary" type="submit">Submit</button>
             </div>
-        <!-- </form> -->
+
+        </form>
     </div>
 </section>
-
-   
-
 
 <!-- Floating Contact Button 1 -->
 <div class="fixed right-1 top-1/3 transform -translate-y-1/1 flex items-center mt-10">

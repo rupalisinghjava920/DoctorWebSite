@@ -1,44 +1,71 @@
-
+/* Section Styling */
 .section-inner {
     margin-top: 60px;
     width: 80%;
+    max-width: 600px;
     background: white;
     padding: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
+    /* margin-left: auto;
+    margin-right: auto; */
 }
 
-.row col {
-    margin-top: 10px;
+/* Form Styling */
+.doctors {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 10px;
+    flex-direction: column;
+    gap: 15px;
 }
 
-.col-4{
-    
-    padding-top: 15px;
+/* Input Fields */
+.form-control {
+    margin: 10px;
+    width: 500%;
+    padding: 15px;
+    height: 50px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 18px;
+    outline: none;
 }
 
-.col-12{
-    padding-top: 20px;
-    width: 400px;
+/* Textarea Styling */
+textarea.form-control {
+    resize: none;
+    height: 120px;
 }
 
+/* Button Container */
 .button-container {
     display: flex;
     justify-content: center;
     padding-top: 10px;
 }
+
+/* Submit Button */
 .btn-primary {
-    padding: 10px 20px;
+    padding: 12px 20px;
     background-color: #007BFF;
     color: white;
     border: none;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: 0.3s;
 }
+
 .btn-primary:hover {
     background-color: #0056b3;
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .section-inner {
+        width: 90%;
+    }
+}
+
+
+
+

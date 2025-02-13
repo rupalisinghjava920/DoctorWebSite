@@ -16,41 +16,46 @@
     
    
  <!-- Bootstrap JS -->
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
         <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
         <script src="https://cdn.tailwindcss.com"></script>
         <script src="https://cdn.tailwindcss.com"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
+        <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+
 </head>
 <body>
-    
-<div class="marquee">
-    Patient can contact Dr. GS Bansal on phone no 9811119367 for treatment/guidance
-</div>
 
+
+   
+ 
 <style>
-  .marquee {
-    width: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-    position: relative;
-    background-color: blue;
-    color: white;
-  }
-  .marquee::after {
-    content: "Patient can contact Dr. GS Bansal on phone no 9811119367 for treatment/guidance";
-    display: block;
-    position: absolute;
-    white-space: nowrap;
-    animation: marquee 10s linear infinite;
-  }
-  @keyframes marquee {
-    0% { transform: translateX(100%); }
-    100% { transform: translateX(-100%); }
-  }
+        .marquee-container {
+            background-color: #6666ff; /* Light purple-blue */
+            padding: 10px 0;
+            overflow: hidden;
+            white-space: nowrap;
 
-</style>
+        }
+        .marquee-text {
+            display: inline-block;
+            color: white;
+            font-weight: bold;
+            animation: marquee 10s linear infinite;
+        }
+        @keyframes marquee {
+            from { transform: translateX(100%); }
+            to { transform: translateX(-100%); }
+        }
+    </style>
+
+
+    <div class="marquee-container">
+        <div class="marquee-text">
+            Patient can contact Dr. GS Bansal on phone no 9811119367 for treatment / guidance till lockdown
+        </div>
+    </div>
 
 
 
@@ -114,11 +119,32 @@
     </a>
 </div>
 
+<div class="info-section">
+    <div class="info-box">
+        <img src="images/phone2.png" alt="Phone">
+        <p>Patient Can Contact <strong>Dr. GS Bansal</strong> On <br>
+            <span class="highlight">Phone No 9811119367</span> For <br>Treatment/guidance till lockdown by Govt.
+        </p>
+    </div>
+    <div class="info-box">
+        <img src="images/clock.png" alt="Clock">
+        <p>We are open Mon-Sat <br>
+            <span class="highlight">9 AM - 1 PM & 5 PM - 8:30 PM</span> <br> Fee: Rs.300/-
+        </p>
+    </div>
+    <div class="info-box">
+        <img src="images/mail1.png" alt="Email">
+        <p>Need support? Drop us an email <br>
+            <a href="mailto:Drgsbansal@Gmail.Com" class="email-link">Drgsbansal@Gmail.Com</a>
+        </p>
+    </div>
+</div>
 
+<!-- 
 <section class="poster-container ">
     <div class="poster">
         <div class="info-box">
-            <img src="images/phone1.png" alt="Phone Icon">
+            <img src="images/phone2.png" alt="Phone Icon">
             <div class="info-text">
                 <p>Patient Can Contact Dr. GS Bansal On</p>
                 <p><a href="tel:9811119367" class="phone">Phone No 9811119367 For</a></p>
@@ -143,7 +169,7 @@
             </div>
         </div>
     </div>
-</section>
+</section> -->
 
 <div class="about_us_text">
     <div class="text-content1">
@@ -522,7 +548,9 @@
               <div class="title">
                  <h4>Useful Links</h4>
               </div>
-                 <ul class="link">
+              
+              
+              <ul class="link">
                     <li><a href="index.php"></a>Home</li>
                     <li><a href="about.php"></a>About Us</li>
                     <li><a href="contact.php"></a>Contact Us</li>

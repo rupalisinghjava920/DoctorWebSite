@@ -83,45 +83,50 @@
                     Nose problems any health issue like Gynacological or Sexual like premature ejaculation are to be address first by 
                     GP and to refer higher centres if needed . GP is qualified to treat most ailments and provide comprehensive primary 
                     health care.</p>
-
-               <h1>Specializations</h1>
-
-            <p>Since 1980 ,Dr. G. S. Bansal, an eminent and reputed Family & General physician in Noida, is an 
-                alumni of Jawaharlal Nehru Medical College, Ajmer (Rajasthan). He completed MBBS . Post graduation certification 
-                in Chest and Tuberculosis from IMA IKN Sinha institute, INDIA . FCGP coferred by College of general practitioner 
-                IMA Delhi .With over 40 + years of experience in the field, he is one of the oldest Gen physicians in Noida, 
-                working since 1980. In early days of his career, he worked in Safdarjung Hospital in Delhi and has been a visiting 
-                doctor in many prestigious government institutions such as DTC and premier schools such as D.P.S.He is a highly 
-                regarded family and General physician is well-known amongst patients of all age groups.</p>
-       
-
-                    <p>Health issues of any kind Fever may be Viral Malaria Typhoid Dengue Tuberculosis ,Cough Cold Pain abdomen Gases 
-                    constipation Hypertension Thyrroid Diabetes Knee joints pain Eye Ear Nose problems any health issue like 
-                    Gynacological or Sexual like premature ejaculation are to be address first by GP and to refer higher centres if 
-                    needed . GP is qualified to treat most ailments and provide comprehensive primary health care.</p>
-
-                    <p>Patients can meet Dr. G.S. Bansal at Fever Clinic located at Gulmohur Commercial Complex, Sector-15, 
-                        Noida. Its proximity to the Noida Sector 15 metro station makes it easily accessible.</p>   
-
-                    <p>The staff at the clinic are courteous and prompt at providing any assistance. They readily answer 
-                        any queries or questions that you may have. The timings of the clinic are:</p>
-
-
-                <p>Monday to Saturday – 9:00 AM -1:00 PM& 5:00 PM-8:30 PM
-                        <br>
-                        Sunday – closed
-                        <br>
-                        Fee: Rs.300/-
-                    </p>
-
-                    <h1>Services:</h1>
-
-                    <p>X-Ray, Tests- Blood, Sugar, B.P.</p>
+      
+                    
         </div>
+
         <div class="image-content">
             <img src="images/Dr. G S Bansal.png" alt="Doctor Image">
         </div>
-                       
+
+        <div class="full-width-content">
+        <h1>Specializations</h1>
+                <p>Since 1980 ,Dr. G. S. Bansal, an eminent and reputed Family & General physician in Noida, is an 
+                    alumni of Jawaharlal Nehru Medical College, Ajmer (Rajasthan). He completed MBBS . Post graduation certification 
+                    in Chest and Tuberculosis from IMA IKN Sinha institute, INDIA . FCGP coferred by College of general practitioner 
+                    IMA Delhi .With over 40 + years of experience in the field, he is one of the oldest Gen physicians in Noida, 
+                    working since 1980. In early days of his career, he worked in Safdarjung Hospital in Delhi and has been a visiting 
+                    doctor in many prestigious government institutions such as DTC and premier schools such as D.P.S.He is a highly 
+                    regarded family and General physician is well-known amongst patients of all age groups.</p><br>
+        
+
+                        <p>Health issues of any kind Fever may be Viral Malaria Typhoid Dengue Tuberculosis ,Cough Cold Pain abdomen Gases 
+                        constipation Hypertension Thyrroid Diabetes Knee joints pain Eye Ear Nose problems any health issue like 
+                        Gynacological or Sexual like premature ejaculation are to be address first by GP and to refer higher centres if 
+                        needed . GP is qualified to treat most ailments and provide comprehensive primary health care.</p><br>
+
+                        <p>Patients can meet Dr. G.S. Bansal at Fever Clinic located at Gulmohur Commercial Complex, Sector-15, 
+                            Noida. Its proximity to the Noida Sector 15 metro station makes it easily accessible.</p> <br>  
+
+                        <p>The staff at the clinic are courteous and prompt at providing any assistance. They readily answer 
+                            any queries or questions that you may have. The timings of the clinic are:</p><br>
+
+
+                        <p>Monday to Saturday – 9:00 AM -1:00 PM& 5:00 PM-8:30 PM
+                            <br>
+                            Sunday – closed
+                            <br>
+                            Fee: Rs.300/-
+                        </p><br>
+
+                        <h1>Services:</h1>
+                        
+
+                        <p>X-Ray, Tests- Blood, Sugar, B.P.</p>
+            
+        </div>     
     </div>
 </section>
 
