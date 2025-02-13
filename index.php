@@ -32,7 +32,7 @@
  
 <style>
         .marquee-container {
-            background-color: #6666ff; /* Light purple-blue */
+            background-color: #6666ff;
             padding: 10px 0;
             overflow: hidden;
             white-space: nowrap;
@@ -75,6 +75,7 @@
             </div>
         </div>
     </nav>
+
 
 <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
@@ -119,6 +120,7 @@
     </a>
 </div>
 
+
 <div class="info-section">
     <div class="info-box">
         <img src="images/phone2.png" alt="Phone">
@@ -140,36 +142,7 @@
     </div>
 </div>
 
-<!-- 
-<section class="poster-container ">
-    <div class="poster">
-        <div class="info-box">
-            <img src="images/phone2.png" alt="Phone Icon">
-            <div class="info-text">
-                <p>Patient Can Contact Dr. GS Bansal On</p>
-                <p><a href="tel:9811119367" class="phone">Phone No 9811119367 For</a></p>
-                <p>Treatment/guidance till lockdown by Govt.</p>
-            </div>
-        </div>
 
-        <div class="info-box">
-            <img src="images/clock.png" alt="Clock Icon">
-            <div class="info-text">
-                <p>We are open Mon-Sat</p>
-                <p class="p1"><strong>9 AM - 1 PM & 5 PM - 8:30 PM</strong></p>
-                <p>Fee: Rs.300/-</p>
-            </div>
-        </div>
-
-        <div class="info-box">
-            <img src="images/mail1.png" alt="Mail Icon">
-            <div class="info-text">
-                <p>Need support? Drop us an email</p>
-                <p><a href="mailto:drgsbansal@gmail.com" class="email">Drgsbansal@Gmail.Com</a></p>
-            </div>
-        </div>
-    </div>
-</section> -->
 
 <div class="about_us_text">
     <div class="text-content1">
@@ -586,5 +559,21 @@
     </footer>
 </section>
 
+<div class="container-1">
+        <div class="col-md-6">
+            <div class="top_quote hidden-sm">
+                <p>
+                © drgsbansal | All rights reserved
+                </p>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="top_quote hidden-sm">
+                <p>
+                <a href="">Design & Develop by: Kite Web Technologies Pvt. Ltd.</a>
+            </div>
+        </div>
+</div>
 </body>
 </html>

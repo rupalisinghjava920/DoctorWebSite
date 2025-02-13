@@ -39,7 +39,7 @@ textarea.form-control {
     border-radius: 5px;
     cursor: pointer;
     width: 70%;
-    t
+    
 }
 
 .btn-primary:hover {
@@ -56,8 +56,8 @@ textarea.form-control {
 /* Message Box Styling */
 .display_message {
     position: relative;
-    background-color: #f9f9f9; /* Yellow background */
-    color: #333; /* Dark text */
+    background-color: #f9f9f9; 
+    color: #333; 
     padding: 12px 20px;
     border-radius: 5px;
     font-size: 16px;

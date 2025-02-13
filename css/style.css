@@ -658,3 +658,30 @@ p {
         text-align: center;
     }
 }
+
+
+.container-1 {
+    display: flex;
+    margin-top: 5px;
+    margin: 0 auto;
+    height: 50px;
+    padding: 15px;
+    background-color: black;
+}
+
+.col-md-6 {
+    flex: 1;
+    text-align: center; 
+}
+@media (max-width: 768px) {
+    .container-1 {
+        flex-direction: column; 
+        height: auto; 
+        padding: 10px;
+    }
+
+    .col-md-6 {
+        width: 100%; 
+        padding: 10px 0;
+    }
+}
