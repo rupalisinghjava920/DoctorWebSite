@@ -6,6 +6,8 @@
     <title>dashboard Page</title>
     <link rel="stylesheet" href="css/style.css">
     <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
@@ -77,24 +79,24 @@
     </nav>
 
 
-<div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+<div id="carouselExample" class="carousel slide" data-bs-ride="carousel" id="top">
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <img src="images/doctor1.png"  alt="Slide 1" style="height: 600px; width: 1540px;" >
+            <img src="images/doctor1.png"  alt="Slide 1" style="height: 550px; width: 1540px;" >
         </div>
         <div class="carousel-item">
-            <img src="images/doctor2.png"  alt="Slide 2" style="height: 600px; width: 1540px;" >
+            <img src="images/doctor2.png"  alt="Slide 2" style="height: 550px; width: 1540px;" >
         </div>
         <div class="carousel-item">
-            <img src="images/doctor3.png"  alt="Slide 3" style="height: 600px; width: 1540px;" >
+            <img src="images/doctor3.png"  alt="Slide 3" style="height: 550px; width: 1540px;" >
         </div>
-        <div>
+        <!-- <div> -->
     
         <div class="carousel-item">
-            <img src="images/doctor4.png"  alt="Slide 4" style="height: 600px; width: 1540px;" >
+            <img src="images/doctor4.png"  alt="Slide 4" style="height: 550px; width: 1540px;" >
         </div>
         <div class="carousel-item">
-            <img src="images/doctor5.png"  alt="Slide 5" style="height: 600px; width: 1540px;" >
+            <img src="images/doctor5.png"  alt="Slide 5" style="height: 550px; width: 1540px;" >
         </div>
     </div>
 
@@ -559,6 +561,11 @@
     </footer>
 </section>
 
+
+<a href="#" class="scroll-to-top">&#9650;</a>
+
+
+
 <div class="container-1">
         <div class="col-md-6">
             <div class="top_quote hidden-sm">
@@ -575,5 +582,7 @@
             </div>
         </div>
 </div>
+
+
 </body>
 </html>

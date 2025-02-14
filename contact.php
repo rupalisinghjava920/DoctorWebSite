@@ -213,6 +213,9 @@ if(isset($_POST['doctors'])){
     </footer>
 </section>
 
+
+<a href="#" class="scroll-to-top">&#9650;</a>
+
 <div class="container-1">
         <div class="col-md-6">
             <div class="top_quote hidden-sm">
